@@ -1,0 +1,16 @@
+PODS:
+  - ColourPicker (0.1.0)
+
+DEPENDENCIES:
+  - ColourPicker (from `../`)
+
+EXTERNAL SOURCES:
+  ColourPicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ColourPicker: 04beb687d790be907f1c44a3690649536b25db80
+
+PODFILE CHECKSUM: c28f5afaa55653d8e26613b91fcc0ec31a3506d8
+
+COCOAPODS: 1.8.4

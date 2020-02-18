@@ -30,9 +30,9 @@
 		0BFE79EDB7E820E43437AF4E /* Pods-ColourPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Example.debug.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Example/Pods-ColourPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3A67D4B364BD88C59E538785 /* Pods-ColourPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Tests/Pods-ColourPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D15FD30B358B424B2F185E0 /* Pods_ColourPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		948CE4A09B5BB698B9508F1F /* ColourPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ColourPicker.podspec; path = ../ColourPicker.podspec; sourceTree = "<group>"; };
-		AAD6A5C9CA2B6FE010DB5E96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E1C57EC91F9F22E093BFBD47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		948CE4A09B5BB698B9508F1F /* ColourPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ColourPicker.podspec; path = ../ColourPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AAD6A5C9CA2B6FE010DB5E96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E1C57EC91F9F22E093BFBD47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E29557B22524EC8F72F3BC80 /* Pods-ColourPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Example.release.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Example/Pods-ColourPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3DB3E91B240140CF6B182A7 /* Pods_ColourPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColourPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC92D14DEC5EF55460800D23 /* Pods-ColourPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Tests/Pods-ColourPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,14 +85,13 @@
 				3A67D4B364BD88C59E538785 /* Pods-ColourPicker_Tests.debug.xcconfig */,
 				EC92D14DEC5EF55460800D23 /* Pods-ColourPicker_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		ED83F66F20348A760038D96B = {
 			isa = PBXGroup;
 			children = (
-				ED83F69A20348B650038D96B /* Podspec Metadata */,
+				ED83F69A20348B650038D96B /* Metadata */,
 				ED83F67A20348A760038D96B /* ColourPicker */,
 				ED83F68D20348A760038D96B /* Tests */,
 				ED83F67920348A760038D96B /* Products */,
@@ -132,14 +131,14 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		ED83F69A20348B650038D96B /* Podspec Metadata */ = {
+		ED83F69A20348B650038D96B /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
 				948CE4A09B5BB698B9508F1F /* ColourPicker.podspec */,
 				AAD6A5C9CA2B6FE010DB5E96 /* README.md */,
 				E1C57EC91F9F22E093BFBD47 /* LICENSE */,
 			);
-			name = "Podspec Metadata";
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,15 +189,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					ED83F67720348A760038D96B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
 					ED83F68920348A760038D96B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED83F67720348A760038D96B;
 					};
@@ -361,6 +362,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -368,6 +370,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -418,6 +421,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -425,6 +429,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -459,13 +464,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ColourPicker/ColourPicker.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ColourPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ColourPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -475,13 +481,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ColourPicker/ColourPicker.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ColourPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ColourPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -497,7 +504,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ColourPicker-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "";
 			};
 			name = Debug;
@@ -514,7 +521,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.ColourPicker-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "";
 			};
 			name = Release;

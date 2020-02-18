@@ -7,37 +7,26 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ColourPicker'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ColourPicker.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.name         = "ColourPicker"
+  s.version      = "0.1.0"
+  s.summary      = "A pure Swift library to detect favicons use by a website."
+  s.homepage     = "https://github.com/will-lumley/ColourPicker.git"
+  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
+  
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    FaviconFinder is a tiny pure Swift library designed for iOS and macOS applications that allows
+    you to detect favicons used by a website.
+                          DESC
 
-  s.homepage         = 'https://github.com/will-lumley/ColourPicker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'will-lumley' => 'will@lumley.io' }
-  s.source           = { :git => 'https://github.com/will-lumley/ColourPicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author             = { "William Lumley" => "will@lumley.io" }
+  s.social_media_url   = "http://twitter.com/wlumley95"
 
-  s.platform = :osx
+  s.ios.deployment_target = "10.0"
   s.osx.deployment_target = "10.10"
-
-  s.source_files = 'ColourPicker/Classes/**/*'
-
-  # s.resource_bundles = {
-  #   'ColourPicker' => ['ColourPicker/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'Cocoa'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.swift_version         = '5.0'
+  
+  s.source       = { :git => "https://github.com/will-lumley/ColourPicker.git", :tag => s.version.to_s }
+  
+  s.source_files = 'Sources/**/*/*'
 end
