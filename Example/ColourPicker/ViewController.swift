@@ -7,14 +7,19 @@
 //
 
 import Cocoa
+import ColourPicker
 
 class ViewController: NSViewController
 {
     override var representedObject: Any? { didSet {} }
     
+    @IBOutlet weak var colourPicker: ColourPicker!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.colourPicker.selectedColor = NSColor.green
     }
 }
 

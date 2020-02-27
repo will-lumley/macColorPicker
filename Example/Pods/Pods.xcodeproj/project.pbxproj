@@ -16,6 +16,7 @@
 		6D2F525B2291FE7FBCBBA4BD29615164 /* Pods-ColourPicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A181FEBEDFADAC301CF378F37221FF /* Pods-ColourPicker_Tests-dummy.m */; };
 		B6A014DA8F3A0352EFDDA63565B74E66 /* ColourPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B3BC75BB4529EA589F8FAD71A82363 /* ColourPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B900F47F5790F06D97CCA64169482043 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		BEEA73112404D65F00C4A283 /* ColourPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEA73102404D65F00C4A283 /* ColourPickerViewController.swift */; };
 		C8F32A4BA1465AF5BA659726A37E4F92 /* Pods-ColourPicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60153B11155FB8A2723BBEABB4884CB0 /* Pods-ColourPicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A13156545AF2C60452F286BB886AFC91 /* ColourPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ColourPicker-Info.plist"; sourceTree = "<group>"; };
 		A5589872225FCA17052D40F092A9230A /* Pods-ColourPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEEA73102404D65F00C4A283 /* ColourPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColourPickerViewController.swift; path = Sources/ColourPicker/Classes/ColourPickerViewController.swift; sourceTree = "<group>"; };
 		C070B2284FFC70DC7819B7FA567EE2E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C55063452366D24415D303E9D5FDC978 /* ColourPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColourPicker.xcconfig; sourceTree = "<group>"; };
 		C945160316219086FE4FE7A40579D8BD /* Pods-ColourPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColourPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F7094EE76A6D5A260E475507CBF4DD3D /* ColourPicker.swift */,
+				BEEA73102404D65F00C4A283 /* ColourPickerViewController.swift */,
 				88B3700D3E3305F8C9735226B5E5E46B /* Pod */,
 				8B543E84092C5AF90EA40202B9785113 /* Support Files */,
 			);
@@ -314,7 +317,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -375,6 +378,7 @@
 			files = (
 				5A666AC7C75A16CA5185E2C1FB54036E /* ColourPicker-dummy.m in Sources */,
 				0358381D8A42515D78A5739DFC9B777B /* ColourPicker.swift in Sources */,
+				BEEA73112404D65F00C4A283 /* ColourPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C55063452366D24415D303E9D5FDC978 /* ColourPicker.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -441,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C55063452366D24415D303E9D5FDC978 /* ColourPicker.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -475,6 +481,7 @@
 			baseConfigurationReference = E15EF2E41CC566AC2BDE791F79D4C11D /* Pods-ColourPicker_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -510,6 +517,7 @@
 			baseConfigurationReference = A5589872225FCA17052D40F092A9230A /* Pods-ColourPicker_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -609,6 +617,7 @@
 			baseConfigurationReference = DD817AE5FEC64A2FE18CA87442CC7420 /* Pods-ColourPicker_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -644,6 +653,7 @@
 			baseConfigurationReference = C945160316219086FE4FE7A40579D8BD /* Pods-ColourPicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
