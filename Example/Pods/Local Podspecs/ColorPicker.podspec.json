@@ -13,8 +13,7 @@
   },
   "social_media_url": "http://twitter.com/wlumley95",
   "platforms": {
-    "ios": "10.0",
-    "osx": "10.10"
+    "osx": "10.11"
   },
   "swift_versions": "5.0",
   "source": {

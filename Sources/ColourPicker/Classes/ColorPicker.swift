@@ -36,7 +36,7 @@
     open override func mouseUp(with event: NSEvent) {
         let colourPickerViewController = ColorPickerViewController()
         
-        self.popover.contentSize = NSSize(width: 100.0, height: 100.0)
+        self.popover.contentSize = NSSize(width: 200.0, height: 100.0)
         self.popover.contentViewController = colourPickerViewController
         self.popover.behavior = .transient
         self.popover.animates = true

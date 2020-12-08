@@ -36,6 +36,7 @@
 		948CE4A09B5BB698B9508F1F /* ColourPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ColourPicker.podspec; path = ../ColourPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAD6A5C9CA2B6FE010DB5E96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA2A9EBE1098817E1DCFE514 /* Pods-ColorPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Tests/Pods-ColorPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEF91CB5257F51B80068C8A5 /* ColorPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorPicker.entitlements; sourceTree = "<group>"; };
 		DB0BE6C014EA9ACE523BD306 /* Pods-ColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Tests/Pods-ColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E1C57EC91F9F22E093BFBD47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E29557B22524EC8F72F3BC80 /* Pods-ColourPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Example.release.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Example/Pods-ColourPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		ED83F67F20348A760038D96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED83F68220348A760038D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED83F68420348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED83F68520348A760038D96B /* ColourPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColourPicker.entitlements; sourceTree = "<group>"; };
 		ED83F68A20348A760038D96B /* ColorPicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED83F68E20348A760038D96B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		ED83F69020348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				ED83F67F20348A760038D96B /* Assets.xcassets */,
 				ED83F68120348A760038D96B /* Main.storyboard */,
 				ED83F68420348A760038D96B /* Info.plist */,
-				ED83F68520348A760038D96B /* ColourPicker.entitlements */,
+				BEF91CB5257F51B80068C8A5 /* ColorPicker.entitlements */,
 			);
 			path = ColorPicker;
 			sourceTree = "<group>";
@@ -477,7 +477,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ColourPicker/Info.plist;
+				INFOPLIST_FILE = ColorPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ColourPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +494,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ColourPicker/Info.plist;
+				INFOPLIST_FILE = ColorPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.ColourPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
