@@ -11,6 +11,12 @@ class ColorCell: NSCollectionViewItem {
 
     // MARK: - Properties
 
+    override var isSelected: Bool {
+        didSet {
+            //print("IsSelected: \(isSelected)")
+        }
+    }
+
     var color: NSColor? {
         didSet {
             self.view.layer?.backgroundColor = self.color?.cgColor
@@ -23,7 +29,7 @@ class ColorCell: NSCollectionViewItem {
     override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
