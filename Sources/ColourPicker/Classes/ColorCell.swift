@@ -40,7 +40,13 @@ class ColorCell: NSCollectionViewItem {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.wantsLayer = true
+    }
+
+    override func viewDidAppear() {
+        super.viewDidAppear()
 
         self.view.wantsLayer = true
+        self.view.layer?.cornerRadius = self.view.bounds.width / 2
     }
 }

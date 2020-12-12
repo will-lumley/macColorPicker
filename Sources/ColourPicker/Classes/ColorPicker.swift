@@ -10,6 +10,9 @@
 {
     // MARK: - Properties
 
+    /// The colours that we are displaying to the user
+    private let colours: [NSColor]
+
     /// The ViewController that manages the color selection
     private lazy var colourPickerViewController = ColorPickerViewController(delegate: self)
     
@@ -25,7 +28,17 @@
         }
     }
 
-    //MARK: - ColourPicker
+    // MARK: - ColourPicker
+    init() {
+        super.init(frame: .zero)
+        self.setup()
+    }
+
+    init(colors: [NSColor]) {
+        super.init(frame: .zero)
+        self.setup()
+    }
+
     public override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         self.setup()
@@ -46,7 +59,8 @@
     }
     
     fileprivate func setup() {
-        
+        self.wantsLayer = true
+        self.layer?.cornerRadius = 12
     }
 }
 
@@ -56,6 +70,7 @@ extension ColorPicker: ColorPickerDelegate {
 
     func didSelectColor(_ color: NSColor) {
         self.selectedColor = color
+        self.popover.close()
     }
 
 }
