@@ -11,9 +11,16 @@ protocol ColorPickerDelegate {
     func didSelectColor(_ color: NSColor)
 }
 
-class ColorPickerViewController: NSViewController
-{
+open class ColorPickerViewController: NSViewController {
+
     // MARK: - Properties
+
+    /// The colours that we are displaying to the user
+    var colors: [NSColor] {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
 
     /// The delegate for our ColorPicker
     private var delegate: ColorPickerDelegate?
@@ -33,51 +40,32 @@ class ColorPickerViewController: NSViewController
 
         return flowLayout
     }
-    
-    /// The colours that we are displaying to the user
-    private let colours = [
-        NSColor.black,
-        NSColor.darkGray,
-        NSColor.lightGray,
-        NSColor.white,
-        NSColor.gray,
-        NSColor.red,
-        NSColor.green,
-        NSColor.blue,
-        NSColor.cyan,
-        NSColor.yellow,
-        NSColor.magenta,
-        NSColor.orange,
-        NSColor.purple,
-        NSColor.brown
-    ]
 
     /// The cell identifier that we're using with our CollectionView
     private let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "ColorCellIdentifier")
 
     // MARK: - NSViewController
-    init(delegate: ColorPickerDelegate) {
+    init(delegate: ColorPickerDelegate?, colors: [NSColor]) {
         self.delegate = delegate
+        self.colors = colors
+
         super.init(nibName: nil, bundle: nil)
     }
 
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
+        self.colors = NSColor.allSystemColors
         super.init(coder: coder)
     }
 
-    override func loadView() {
+    open override func loadView() {
         self.view = NSView()
     }
 
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    override func viewDidAppear() {
+    open override func viewDidAppear() {
         super.viewDidAppear()
 
         self.configureCollectionViewPresentation()
@@ -117,18 +105,18 @@ class ColorPickerViewController: NSViewController
 
 extension ColorPickerViewController: NSCollectionViewDataSource {
 
-    func numberOfSections(in collectionView: NSCollectionView) -> Int {
+    public func numberOfSections(in collectionView: NSCollectionView) -> Int {
         return 1
     }
 
-    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.colours.count
+    public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.colors.count
     }
     
-    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+    public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         let item = collectionView.makeItem(withIdentifier: self.cellIdentifier, for: indexPath) as! ColorCell
 
-        let color = self.colours[indexPath.item]
+        let color = self.colors[indexPath.item]
         item.color = color
 
         return item
@@ -140,12 +128,12 @@ extension ColorPickerViewController: NSCollectionViewDataSource {
 
 extension ColorPickerViewController: NSCollectionViewDelegate {
 
-    func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
+    public func collectionView(_ collectionView: NSCollectionView, didSelectItemsAt indexPaths: Set<IndexPath>) {
         guard let indexPath = indexPaths.first else {
             return
         }
 
-        let color = self.colours[indexPath.item]
+        let color = self.colors[indexPath.item]
         self.delegate?.didSelectColor(color)
     }
 

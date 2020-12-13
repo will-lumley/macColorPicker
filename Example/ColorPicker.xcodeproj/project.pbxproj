@@ -33,9 +33,9 @@
 		589A15E4E6D075A3070F00E3 /* Pods_ColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7685A3C9CDD4D07C71541FD6 /* Pods-ColorPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Example.release.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Example/Pods-ColorPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8FF62F6466D4F18A8644705A /* Pods_ColorPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		948CE4A09B5BB698B9508F1F /* ColourPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ColourPicker.podspec; path = ../ColourPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAD6A5C9CA2B6FE010DB5E96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA2A9EBE1098817E1DCFE514 /* Pods-ColorPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Tests/Pods-ColorPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0354D7258626E200A5329A /* ColorPicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = ColorPicker.podspec; path = ../ColorPicker.podspec; sourceTree = "<group>"; };
 		BEF91CB5257F51B80068C8A5 /* ColorPicker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorPicker.entitlements; sourceTree = "<group>"; };
 		DB0BE6C014EA9ACE523BD306 /* Pods-ColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Tests/Pods-ColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E1C57EC91F9F22E093BFBD47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		ED83F69A20348B650038D96B /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				948CE4A09B5BB698B9508F1F /* ColourPicker.podspec */,
+				BE0354D7258626E200A5329A /* ColorPicker.podspec */,
 				AAD6A5C9CA2B6FE010DB5E96 /* README.md */,
 				E1C57EC91F9F22E093BFBD47 /* LICENSE */,
 			);

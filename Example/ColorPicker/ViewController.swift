@@ -15,10 +15,9 @@ class ViewController: NSViewController
     
     @IBOutlet weak var colorPicker: ColorPicker!
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.colorPicker.selectedColor = NSColor.green
     }
 }
