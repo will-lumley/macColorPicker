@@ -13,7 +13,7 @@ class ColorCell: NSCollectionViewItem {
 
     override var isSelected: Bool {
         didSet {
-            //print("IsSelected: \(isSelected)")
+            updateAppearance()
         }
     }
 
@@ -22,7 +22,6 @@ class ColorCell: NSCollectionViewItem {
             self.view.layer?.backgroundColor = self.color?.cgColor
         }
     }
-    //private let colorView = NSView()
 
     // MARK: - NSCollectionViewItem
 
@@ -48,5 +47,17 @@ class ColorCell: NSCollectionViewItem {
 
         self.view.wantsLayer = true
         self.view.layer?.cornerRadius = self.view.bounds.width / 2
+    }
+
+    func updateAppearance() {
+        self.view.wantsLayer = true
+
+        if isSelected {
+            self.view.layer?.borderWidth = 2.0
+            self.view.layer?.borderColor = NSColor.white.cgColor
+        } else {
+            self.view.layer?.borderWidth = 0.0
+            self.view.layer?.borderColor = nil
+        }
     }
 }

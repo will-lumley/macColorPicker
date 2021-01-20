@@ -17,6 +17,8 @@
 		8E519BA723B2CC65BAAD4F870E416031 /* Pods-ColorPicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D748375FDFDDB36FB157CD13F15B51 /* Pods-ColorPicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD564DE58CD70D2FD27BDF5B69FC3057 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E25516C51063BE5373D135FA278A82 /* ColorPicker.swift */; };
 		B4E4CFDC12482050255C40E0F1C64270 /* ColorPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9995CC49D32B4877F8C6BAFFCC14A7 /* ColorPicker-dummy.m */; };
+		BE0354E12586299C00A5329A /* ColorPickerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0354E02586299C00A5329A /* ColorPickerViewControllerDelegate.swift */; };
+		BE0354E6258629F000A5329A /* ColorPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0354E5258629F000A5329A /* ColorPickerDelegate.swift */; };
 		D27EB41383760DBD848EB6EBDFAFF05C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
 		ECD934EE67847132E92E2392D25B80FA /* Pods-ColorPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB06E4107FF52CA8C875B40BEEE038 /* Pods-ColorPicker_Example-dummy.m */; };
 		F2AD6D6D20979757EEE76ED99E40BBCF /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0475321CD45C9E81D5F6C383429C9AC /* ColorPickerViewController.swift */; };
@@ -66,6 +68,8 @@
 		AB05E78E18760F6486346E48482BDFFC /* NSColor+Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSColor+Colors.swift"; sourceTree = "<group>"; };
 		B3312C1D88F3D25EDECDEE2D3236377A /* Pods-ColorPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BB731CA015F66750D1A4755339E7C07E /* Pods-ColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BE0354E02586299C00A5329A /* ColorPickerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewControllerDelegate.swift; sourceTree = "<group>"; };
+		BE0354E5258629F000A5329A /* ColorPickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerDelegate.swift; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C1D748375FDFDDB36FB157CD13F15B51 /* Pods-ColorPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPicker_Example-umbrella.h"; sourceTree = "<group>"; };
 		C289FE740F3759922352DF8319444A49 /* Pods-ColorPicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ColorPicker_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				40265B6FBD493D38755AF1B3F7A691A9 /* ColorCell.swift */,
 				19E25516C51063BE5373D135FA278A82 /* ColorPicker.swift */,
 				E0475321CD45C9E81D5F6C383429C9AC /* ColorPickerViewController.swift */,
+				BE0354E02586299C00A5329A /* ColorPickerViewControllerDelegate.swift */,
+				BE0354E5258629F000A5329A /* ColorPickerDelegate.swift */,
 			);
 			name = Classes;
 			path = Sources/ColorPicker/Classes;
@@ -403,10 +409,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A0596E0513D6F914D0A24D1B3BEBBF5 /* ColorCell.swift in Sources */,
+				BE0354E6258629F000A5329A /* ColorPickerDelegate.swift in Sources */,
 				B4E4CFDC12482050255C40E0F1C64270 /* ColorPicker-dummy.m in Sources */,
 				AD564DE58CD70D2FD27BDF5B69FC3057 /* ColorPicker.swift in Sources */,
 				F2AD6D6D20979757EEE76ED99E40BBCF /* ColorPickerViewController.swift in Sources */,
 				7988932F84D5C7E086E54614B8B28B3B /* NSColor+Colors.swift in Sources */,
+				BE0354E12586299C00A5329A /* ColorPickerViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

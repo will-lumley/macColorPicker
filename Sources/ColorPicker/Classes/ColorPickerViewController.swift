@@ -7,11 +7,7 @@
 
 import Cocoa
 
-protocol ColorPickerDelegate {
-    func didSelectColor(_ color: NSColor)
-}
-
-open class ColorPickerViewController: NSViewController {
+internal class ColorPickerViewController: NSViewController {
 
     // MARK: - Properties
 
@@ -22,8 +18,14 @@ open class ColorPickerViewController: NSViewController {
         }
     }
 
+    /// The border radius that will surround the selected color's cell
+    private let selectedCellBorderRadius: CGFloat
+
+    /// The border color that will surround the selected color's cell
+    private let selectedCellBorderColor: CGColor
+
     /// The delegate for our ColorPicker
-    private var delegate: ColorPickerDelegate?
+    internal var delegate: ColorPickerViewControllerDelegate?
 
     /// The ScrollView for our CollectionView
     private let scrollView = NSScrollView()
@@ -45,16 +47,16 @@ open class ColorPickerViewController: NSViewController {
     private let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "ColorCellIdentifier")
 
     // MARK: - NSViewController
-    init(delegate: ColorPickerDelegate?, colors: [NSColor]) {
-        self.delegate = delegate
+    init(colors: [NSColor], borderRadius: CGFloat, borderColor: CGColor) {
         self.colors = colors
+        self.selectedCellBorderRadius = borderRadius
+        self.selectedCellBorderColor = borderColor
 
         super.init(nibName: nil, bundle: nil)
     }
 
     required public init?(coder: NSCoder) {
-        self.colors = NSColor.allSystemColors
-        super.init(coder: coder)
+        fatalError("ColorPickerViewController does not load from XIB/Storyboard")
     }
 
     open override func loadView() {
