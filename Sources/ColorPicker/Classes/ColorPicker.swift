@@ -41,6 +41,12 @@
     /// The layout for our collection view
     public var colorCollectionViewLayout: NSCollectionViewLayout
 
+    /// The delegate that lets the developer of events
+    public var delegate: ColorPickerDelegate?
+
+    /// The edge that the ColorCollectionView will open on your ColorPicker
+    public var preferredOpeningEdge: NSRectEdge = .minY
+
     // MARK: - Private Properties
 
     /// The ViewController that manages the color selection
@@ -126,7 +132,9 @@
         self.popover.behavior = .transient
         self.popover.animates = true
 
-        self.popover.show(relativeTo: self.bounds, of: self, preferredEdge: .minY)
+        self.delegate?.willOpenColorPicker()
+        self.popover.show(relativeTo: self.bounds, of: self, preferredEdge: self.preferredOpeningEdge)
+        self.delegate?.didOpenColorPicker()
     }
     
     fileprivate func setup() {
@@ -137,7 +145,7 @@
     }
 }
 
-// MARK: - ColorPickerDelegate
+// MARK: - ColorPickerViewControllerDelegate
 
 extension ColorPicker: ColorPickerViewControllerDelegate {
 
@@ -147,6 +155,8 @@ extension ColorPicker: ColorPickerViewControllerDelegate {
         if self.dismissUponColorSelect {
             self.popover.close()
         }
+
+        self.delegate?.didSelectColor(color)
     }
 
 }

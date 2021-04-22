@@ -8,6 +8,8 @@
 import Foundation
 
 /// This protocol is used to allow communication from the ColorPicker to the developers project
-internal protocol ColorPickerDelegate {
+public protocol ColorPickerDelegate {
+    func willOpenColorPicker()
+    func didOpenColorPicker()
     func didSelectColor(_ color: NSColor)
 }

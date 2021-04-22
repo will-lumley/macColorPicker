@@ -18,7 +18,21 @@ class ViewController: NSViewController
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.colorPicker.delegate = self
         self.colorPicker.selectedColor = NSColor.green
     }
 }
 
+extension ViewController: ColorPickerDelegate {
+    func willOpenColorPicker() {
+        print("willOpenColorPicker")
+    }
+    
+    func didOpenColorPicker() {
+        print("didOpenColorPicker")
+    }
+    
+    func didSelectColor(_ color: NSColor) {
+        print("Color: \(color)")
+    }
+}

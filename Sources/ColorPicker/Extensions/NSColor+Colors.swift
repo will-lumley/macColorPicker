@@ -9,8 +9,8 @@ import Foundation
 
 public extension NSColor {
 
-    class var allSystemColors: [NSColor] {
-        return [
+    static var allSystemColors: [NSColor] {
+        [
             NSColor.black,
             NSColor.darkGray,
             NSColor.lightGray,
