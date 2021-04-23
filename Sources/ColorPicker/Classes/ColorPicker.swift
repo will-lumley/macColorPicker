@@ -36,7 +36,7 @@
     public var selectedCellBorderColor = NSColor.white.cgColor
 
     /// The size of our popover
-    public var popoverContentSize = NSSize(width: 200, height: 100)
+    public var popoverContentSize = NSSize(width: 200, height: 110)
 
     /// The layout for our collection view
     public var colorCollectionViewLayout: NSCollectionViewLayout
@@ -143,6 +143,7 @@
         self.wantsLayer = true
         self.layer?.cornerRadius = 12
     }
+
 }
 
 // MARK: - ColorPickerViewControllerDelegate

@@ -36,17 +36,21 @@ internal class ColorPickerViewController: NSViewController {
     /// The layout for our CollectionView
     private var collectionViewLayout: NSCollectionViewFlowLayout {
         let flowLayout = NSCollectionViewFlowLayout()
-        flowLayout.itemSize = NSSize(width: 20, height: 20)
         flowLayout.minimumInteritemSpacing = 5
         flowLayout.minimumLineSpacing = 10.0
+        flowLayout.sectionInset = NSEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
 
         return flowLayout
     }
 
-    /// The cell identifier that we're using with our CollectionView
-    private let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "ColorCellIdentifier")
+    /// The cell identifier that we're using with our CollectionView for colors
+    private let colorCellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "ColorCellIdentifier")
+
+    /// The cell identifier that we're using with our CollectionView for our custom color button
+    private let buttonCellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "ButtonCellIdentifier")
 
     // MARK: - NSViewController
+
     init(colors: [NSColor], borderRadius: CGFloat, borderColor: CGColor) {
         self.colors = colors
         self.selectedCellBorderRadius = borderRadius
@@ -77,7 +81,7 @@ internal class ColorPickerViewController: NSViewController {
     private func configureCollectionViewPresentation() {
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.scrollView)
-        
+
         let constraints = [
             self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 10),
             self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -10),
@@ -98,7 +102,27 @@ internal class ColorPickerViewController: NSViewController {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
 
-        self.collectionView.register(ColorCell.self, forItemWithIdentifier: self.cellIdentifier)
+        self.collectionView.register(ColorCell.self, forItemWithIdentifier: self.colorCellIdentifier)
+        self.collectionView.register(ColorButtonCell.self, forItemWithIdentifier: self.buttonCellIdentifier)
+    }
+
+}
+
+// MARK: - Functions
+private extension ColorPickerViewController {
+
+    @objc
+    func showColorPanelButtonTapped() {
+        let colorPanel = NSColorPanel.shared
+        colorPanel.setTarget(self)
+        colorPanel.setAction(#selector(colorDidChage(sender:)))
+        colorPanel.makeKeyAndOrderFront(self)
+        colorPanel.isContinuous = true
+    }
+
+    @objc
+    func colorDidChage(sender: NSColorPanel) {
+        self.delegate?.didSelectColor(sender.color)
     }
 
 }
@@ -108,20 +132,47 @@ internal class ColorPickerViewController: NSViewController {
 extension ColorPickerViewController: NSCollectionViewDataSource {
 
     public func numberOfSections(in collectionView: NSCollectionView) -> Int {
-        return 1
+        return 2
     }
 
     public func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.colors.count
+        switch section {
+        /// The section that contains the colors
+        case 0:
+            return self.colors.count
+        /// The section that contains the custom color button
+        case 1:
+            return 1
+        /// Ignore anything else
+        default:
+            return 0
+        }
     }
     
     public func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
-        let item = collectionView.makeItem(withIdentifier: self.cellIdentifier, for: indexPath) as! ColorCell
+        switch indexPath.section {
+        /// The section that contains the colors
+        case 0:
+            let item = collectionView.makeItem(withIdentifier: self.colorCellIdentifier, for: indexPath) as! ColorCell
 
-        let color = self.colors[indexPath.item]
-        item.color = color
+            let color = self.colors[indexPath.item]
+            item.color = color
 
-        return item
+            return item
+
+        /// The section that contains the custom color button
+        case 1:
+            let item = collectionView.makeItem(withIdentifier: self.buttonCellIdentifier, for: indexPath) as! ColorButtonCell
+            item.action = { [unowned self] in
+                self.showColorPanelButtonTapped()
+            }
+
+            return item
+
+        /// Ignore anything else
+        default:
+            fatalError()
+        }
     }
 
 }
@@ -137,6 +188,27 @@ extension ColorPickerViewController: NSCollectionViewDelegate {
 
         let color = self.colors[indexPath.item]
         self.delegate?.didSelectColor(color)
+    }
+
+}
+
+// MARK: - NSCollectionViewDelegateFlowLayout
+
+extension ColorPickerViewController: NSCollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> NSSize {
+        switch indexPath.section {
+        /// The section that contains the colors
+        case 0:
+            return NSSize(width: 20, height: 20)
+        /// The section that contains the custom color button
+        case 1:
+            let widthOfButton = self.collectionView.bounds.size.width * 0.75
+            return NSSize(width: widthOfButton, height: 20)
+        /// Ignore anything else
+        default:
+            return NSSize.zero
+        }
     }
 
 }
