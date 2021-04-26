@@ -11,8 +11,17 @@ class ColorButtonCell: NSCollectionViewItem {
 
     // MARK: - Properties
 
+    /// The button that makes up the entirety of this cell
     private var button: NSButton?
-    var action: (() -> ())?
+
+    /// The closure that will be called when our button is clicked
+    internal var action: (() -> ())?
+
+    /// The button's title
+    internal var buttonTitle: String {
+        get { self.button?.title ?? "" }
+        set { self.button?.title = newValue }
+    }
 
     // MARK: - NSCollectionViewItem
 
@@ -31,7 +40,7 @@ class ColorButtonCell: NSCollectionViewItem {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.button = NSButton(title: "Custom Color", target: self, action: #selector(buttonTapped))
+        self.button = NSButton(title: "Custom Color", target: self, action: #selector(buttonClicked))
         guard let button = self.button else {
             return
         }
@@ -51,7 +60,7 @@ class ColorButtonCell: NSCollectionViewItem {
 private extension ColorButtonCell {
 
     @objc
-    func buttonTapped() {
+    func buttonClicked() {
         action?()
     }
 

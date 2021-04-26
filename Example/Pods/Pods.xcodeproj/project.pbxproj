@@ -18,9 +18,7 @@
 		A0E6CEF62F2E1D14AD941CACF662366D /* NSColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD1B93778465BCF04DFE658AFCBC1F2 /* NSColor+Colors.swift */; };
 		A5CAF21F3D708326966971C655C37FA9 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510DDC99B95D81BBFA420D793A12A4CC /* ColorPickerViewController.swift */; };
 		A72D0899C58000FCECE362ACA1823287 /* ColorPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E268F8928615AA93291B45FDB2AFD97A /* ColorPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE1133F81939C9B5611E3280B88BCF18 /* ColorPickerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC20DC3B0CE09299ABE9FECBE14BD3 /* ColorPickerViewControllerDelegate.swift */; };
 		BEA3BC7626319C060051007D /* ColorButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA3BC7526319C060051007D /* ColorButtonCell.swift */; };
-		DDA00D96B521E79AB2558412A5293336 /* ColorPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279C08915489F809538A4F578EE4ED3 /* ColorPickerDelegate.swift */; };
 		ECD934EE67847132E92E2392D25B80FA /* Pods-ColorPicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FB06E4107FF52CA8C875B40BEEE038 /* Pods-ColorPicker_Example-dummy.m */; };
 		FE1CB0A39E6DD0565D232DF8313D7A04 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675801730956ADC21290084A3E92597F /* ColorCell.swift */; };
 /* End PBXBuildFile section */
@@ -45,9 +43,7 @@
 /* Begin PBXFileReference section */
 		1C58EA41F3B86CFB8E81A4307DD22486 /* ColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorPicker.debug.xcconfig; sourceTree = "<group>"; };
 		2C6670900200D72E5972464292EFE3C7 /* Pods-ColorPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ColorPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4279C08915489F809538A4F578EE4ED3 /* ColorPickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPickerDelegate.swift; sourceTree = "<group>"; };
 		4A935AF07301770E5BEF55A8E57A3CB0 /* Pods-ColorPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ColorPicker_Tests.modulemap"; sourceTree = "<group>"; };
-		4CFC20DC3B0CE09299ABE9FECBE14BD3 /* ColorPickerViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPickerViewControllerDelegate.swift; sourceTree = "<group>"; };
 		4FBF2F919DCEBE2CC958FA9441725C04 /* Pods_ColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5042E4E88362CCAE90D3C3843466B8AC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		510DDC99B95D81BBFA420D793A12A4CC /* ColorPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
@@ -144,9 +140,7 @@
 				BEA3BC7526319C060051007D /* ColorButtonCell.swift */,
 				675801730956ADC21290084A3E92597F /* ColorCell.swift */,
 				5AA8ED59655F204626399B5443450C4A /* ColorPicker.swift */,
-				4279C08915489F809538A4F578EE4ED3 /* ColorPickerDelegate.swift */,
 				510DDC99B95D81BBFA420D793A12A4CC /* ColorPickerViewController.swift */,
-				4CFC20DC3B0CE09299ABE9FECBE14BD3 /* ColorPickerViewControllerDelegate.swift */,
 			);
 			name = Classes;
 			path = Sources/ColorPicker/Classes;
@@ -352,7 +346,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -415,9 +409,7 @@
 				4BA2F98FD7A74AD709858665FA3E9D27 /* ColorPicker-dummy.m in Sources */,
 				6D279ACC1667D09697DEBAE24221D4EE /* ColorPicker.swift in Sources */,
 				BEA3BC7626319C060051007D /* ColorButtonCell.swift in Sources */,
-				DDA00D96B521E79AB2558412A5293336 /* ColorPickerDelegate.swift in Sources */,
 				A5CAF21F3D708326966971C655C37FA9 /* ColorPickerViewController.swift in Sources */,
-				AE1133F81939C9B5611E3280B88BCF18 /* ColorPickerViewControllerDelegate.swift in Sources */,
 				A0E6CEF62F2E1D14AD941CACF662366D /* NSColor+Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +444,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD6B3A2A102F4C08CD3906D84C116A97 /* ColorPicker.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -485,7 +476,6 @@
 			baseConfigurationReference = C62161D3EFF4138666FCB8ED495575AC /* Pods-ColorPicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -519,7 +509,6 @@
 			baseConfigurationReference = BB731CA015F66750D1A4755339E7C07E /* Pods-ColorPicker_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -552,7 +541,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C58EA41F3B86CFB8E81A4307DD22486 /* ColorPicker.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -712,7 +700,6 @@
 			baseConfigurationReference = 2C6670900200D72E5972464292EFE3C7 /* Pods-ColorPicker_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -746,7 +733,6 @@
 			baseConfigurationReference = 91FC156830A9AD15CF908A3ECFD393FD /* Pods-ColorPicker_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

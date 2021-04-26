@@ -24,6 +24,7 @@ class ViewController: NSViewController
 }
 
 extension ViewController: ColorPickerDelegate {
+
     func willOpenColorPicker() {
         print("willOpenColorPicker")
     }
@@ -33,6 +34,7 @@ extension ViewController: ColorPickerDelegate {
     }
     
     func didSelectColor(_ color: NSColor) {
-        print("Color: \(color)")
+        print("Color Selected: \(color)")
     }
+
 }

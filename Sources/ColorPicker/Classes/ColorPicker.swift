@@ -6,40 +6,78 @@
 //  Copyright © 2020 William Lumley. All rights reserved.
 //
 
+/// This protocol is used to allow communication from the ColorPicker to the developers project
+public protocol ColorPickerDelegate {
+    func willOpenColorPicker()
+    func didOpenColorPicker()
+    func didSelectColor(_ color: NSColor)
+}
+
 @IBDesignable open class ColorPicker: NSView {
 
-    // MARK: - Public Properties
-
-    /// The colours that we are displaying to the user
-    public var colors = NSColor.allSystemColors {
-        didSet {
-            self.colorPickerViewController.colors = self.colors
-        }
-    }
+    // MARK: - Computed Variables
 
     /// The colour that has been selected, and is displaying, in our ColourPicker
     public var selectedColor: NSColor? {
         //When the SelectedColor is set, update the ColourPicker's background colour
-        didSet {
+        get { self.colorPickerViewController.selectedColor }
+        set {
+            self.colorPickerViewController.selectedColor = newValue
+
             self.wantsLayer = true
-            self.layer?.backgroundColor = self.selectedColor?.cgColor
+            self.layer?.backgroundColor = newValue?.cgColor
         }
     }
+
+    /// The colors that we are displaying to the user
+    public var colors: [NSColor] {
+        get { self.colorPickerViewController.colors }
+        set { self.colorPickerViewController.colors = newValue }
+    }
+
+    /// The border radius that will surround the selected color's cell
+    public var colorCellCornerRadius: CGFloat? {
+        get { self.colorPickerViewController.colorCellCornerRadius }
+        set { self.colorPickerViewController.colorCellCornerRadius = newValue }
+    }
+
+    /// The border color that will surround the selected color's cell
+    public var selectedColorCellBorderColor: CGColor {
+        get { self.colorPickerViewController.selectedColorCellBorderColor }
+        set { self.colorPickerViewController.selectedColorCellBorderColor = newValue }
+    }
+
+    /// The border color that will surround the selected color's cell
+    public var selectedColorCellBorderWidth: CGFloat {
+        get { self.colorPickerViewController.selectedColorCellBorderWidth }
+        set { self.colorPickerViewController.selectedColorCellBorderWidth = newValue }
+    }
+
+    /// Toggles the existence of the Custom Color button
+    public var hideCustomColorButton: Bool {
+        get { self.colorPickerViewController.hideCustomColorButton }
+        set { self.colorPickerViewController.hideCustomColorButton = newValue }
+    }
+
+    /// The title of the Custom Color button
+    public var customColorButtonTitle: String {
+        get { self.colorPickerViewController.customColorButtonTitle }
+        set { self.colorPickerViewController.customColorButtonTitle = newValue }
+    }
+
+    /// The layout for our collection view
+    public var collectionViewLayout: NSCollectionViewLayout {
+        get { self.colorPickerViewController.collectionViewLayout }
+        set { self.colorPickerViewController.collectionViewLayout = newValue }
+    }
+
+    // MARK: - Public Properties
 
     /// If true, the popover will dismiss when a color has been selected
     public var dismissUponColorSelect = true
 
-    /// The border radius that will surround the selected color's cell
-    public var selectedCellBorderRadius = CGFloat(2.0)
-
-    /// The border color that will surround the selected color's cell
-    public var selectedCellBorderColor = NSColor.white.cgColor
-
     /// The size of our popover
     public var popoverContentSize = NSSize(width: 200, height: 110)
-
-    /// The layout for our collection view
-    public var colorCollectionViewLayout: NSCollectionViewLayout
 
     /// The delegate that lets the developer of events
     public var delegate: ColorPickerDelegate?
@@ -55,35 +93,18 @@
     /// The NSPopover that will contain our view that allows users to select different colours
     private let popover = NSPopover()
 
-    /// The default layout for our CollectionView, if the develop does not choose one
-    private class var defaultCollectionViewLayout: NSCollectionViewFlowLayout {
-        let flowLayout = NSCollectionViewFlowLayout()
-        flowLayout.itemSize = NSSize(width: 20, height: 20)
-        flowLayout.minimumInteritemSpacing = 5
-        flowLayout.minimumLineSpacing = 10.0
-
-        return flowLayout
-    }
-
     // MARK: - ColourPicker
+
     init() {
-        self.colorPickerViewController = ColorPickerViewController(colors: self.colors,
-                                                                   borderRadius: self.selectedCellBorderRadius,
-                                                                   borderColor: self.selectedCellBorderColor)
-
-        self.colorCollectionViewLayout = ColorPicker.defaultCollectionViewLayout
-
+        self.colorPickerViewController = ColorPickerViewController()
         super.init(frame: .zero)
         
         self.setup()
     }
 
     init(colors: [NSColor]) {
-        self.colorPickerViewController = ColorPickerViewController(colors: self.colors,
-                                                                   borderRadius: self.selectedCellBorderRadius,
-                                                                   borderColor: self.selectedCellBorderColor)
-
-        self.colorCollectionViewLayout = ColorPicker.defaultCollectionViewLayout
+        self.colorPickerViewController = ColorPickerViewController()
+        self.colorPickerViewController.colors = colors
 
         super.init(frame: .zero)
         
@@ -91,11 +112,9 @@
     }
 
     init(colors: [NSColor], collectionViewLayout: NSCollectionViewLayout) {
-        self.colorPickerViewController = ColorPickerViewController(colors: self.colors,
-                                                                   borderRadius: self.selectedCellBorderRadius,
-                                                                   borderColor: self.selectedCellBorderColor)
-
-        self.colorCollectionViewLayout = collectionViewLayout
+        self.colorPickerViewController = ColorPickerViewController()
+        self.colorPickerViewController.colors = colors
+        self.colorPickerViewController.collectionViewLayout = collectionViewLayout
 
         super.init(frame: .zero)
         
@@ -103,24 +122,14 @@
     }
 
     public override init(frame frameRect: NSRect) {
-        self.colorPickerViewController = ColorPickerViewController(colors: self.colors,
-                                                                   borderRadius: self.selectedCellBorderRadius,
-                                                                   borderColor: self.selectedCellBorderColor)
-
-        self.colorCollectionViewLayout = ColorPicker.defaultCollectionViewLayout
-
+        self.colorPickerViewController = ColorPickerViewController()
         super.init(frame: frameRect)
         
         self.setup()
     }
 
     public required init?(coder: NSCoder) {
-        self.colorPickerViewController = ColorPickerViewController(colors: self.colors,
-                                                                   borderRadius: self.selectedCellBorderRadius,
-                                                                   borderColor: self.selectedCellBorderColor)
-
-        self.colorCollectionViewLayout = ColorPicker.defaultCollectionViewLayout
-
+        self.colorPickerViewController = ColorPickerViewController()
         super.init(coder: coder)
         
         self.setup()
@@ -137,7 +146,7 @@
         self.delegate?.didOpenColorPicker()
     }
     
-    fileprivate func setup() {
+    private func setup() {
         self.colorPickerViewController.delegate = self
 
         self.wantsLayer = true

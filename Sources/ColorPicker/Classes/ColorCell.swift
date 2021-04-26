@@ -13,13 +13,31 @@ class ColorCell: NSCollectionViewItem {
 
     override var isSelected: Bool {
         didSet {
-            updateAppearance()
+            self.updateAppearance()
         }
     }
 
-    var color: NSColor? {
+    internal var color: NSColor? {
         didSet {
             self.view.layer?.backgroundColor = self.color?.cgColor
+        }
+    }
+
+    internal var cornerRadius: CGFloat? {
+        didSet {
+            self.view.layer?.cornerRadius = self.cornerRadius ?? self.view.bounds.width / 2
+        }
+    }
+
+    internal var borderColor: CGColor? {
+        didSet {
+            self.updateAppearance()
+        }
+    }
+
+    internal var borderWidth: CGFloat? {
+        didSet {
+            self.updateAppearance()
         }
     }
 
@@ -46,15 +64,16 @@ class ColorCell: NSCollectionViewItem {
         super.viewDidAppear()
 
         self.view.wantsLayer = true
-        self.view.layer?.cornerRadius = self.view.bounds.width / 2
+
+        self.view.layer?.cornerRadius = self.cornerRadius ?? self.view.bounds.width / 2
     }
 
-    func updateAppearance() {
+    private func updateAppearance() {
         self.view.wantsLayer = true
 
         if isSelected {
-            self.view.layer?.borderWidth = 2.0
-            self.view.layer?.borderColor = NSColor.white.cgColor
+            self.view.layer?.borderWidth = self.borderWidth ?? 2.0
+            self.view.layer?.borderColor = self.borderColor ?? NSColor.white.cgColor
         } else {
             self.view.layer?.borderWidth = 0.0
             self.view.layer?.borderColor = nil
