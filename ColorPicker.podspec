@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint ColourPicker.podspec' to ensure this is a
+# Be sure to run `pod lib lint ColorPicker.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name         = "ColorPicker"
   s.version      = "0.1.0"
   s.summary      = "A pure Swift library to detect favicons use by a website."
-  s.homepage     = "https://github.com/will-lumley/ColourPicker.git"
+  s.homepage     = "https://github.com/will-lumley/ColorPicker.git"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
   
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   
   s.swift_version         = '5.0'
   
-  s.source       = { :git => "https://github.com/will-lumley/ColourPicker.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/will-lumley/ColorPicker.git", :tag => s.version.to_s }
   
   s.source_files = 'Sources/**/*/*'
 end

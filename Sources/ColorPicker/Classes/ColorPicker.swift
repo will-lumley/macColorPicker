@@ -1,6 +1,6 @@
 //
-//  ColourPicker.swift
-//  ColourPicker
+//  ColorPicker.swift
+//  ColorPicker
 //
 //  Created by William Lumley on 19/02/20.
 //  Copyright © 2020 William Lumley. All rights reserved.
@@ -17,15 +17,29 @@ public protocol ColorPickerDelegate {
 
     // MARK: - Computed Variables
 
-    /// The colour that has been selected, and is displaying, in our ColourPicker
+    private var oldSelectedColor: NSColor?
+
+    /// The colour that has been selected, and is displaying, in our ColorPicker
     public var selectedColor: NSColor? {
         //When the SelectedColor is set, update the ColourPicker's background colour
         get { self.colorPickerViewController.selectedColor }
         set {
             self.colorPickerViewController.selectedColor = newValue
 
-            self.wantsLayer = true
-            self.layer?.backgroundColor = newValue?.cgColor
+            if let animationDuration = self.animationDuration {
+                let backgroundColorAnimation = CABasicAnimation(keyPath: "backgroundColor")
+                backgroundColorAnimation.fromValue = self.oldSelectedColor?.cgColor
+                backgroundColorAnimation.toValue = newValue?.cgColor
+                backgroundColorAnimation.duration = CFTimeInterval(animationDuration)
+                backgroundColorAnimation.isRemovedOnCompletion = false
+                backgroundColorAnimation.fillMode = .forwards
+
+                self.layer?.add(backgroundColorAnimation, forKey: "backgroundColor")
+            } else {
+                self.layer?.backgroundColor = newValue?.cgColor
+            }
+
+            self.oldSelectedColor = newValue
         }
     }
 
@@ -71,6 +85,9 @@ public protocol ColorPickerDelegate {
         set { self.colorPickerViewController.collectionViewLayout = newValue }
     }
 
+    /// The duration of the animatino that occurs from the original selected color, to the new color. Set to nil for no animation
+    public var animationDuration: Double? = 0.12
+
     // MARK: - Public Properties
 
     /// If true, the popover will dismiss when a color has been selected
@@ -93,7 +110,7 @@ public protocol ColorPickerDelegate {
     /// The NSPopover that will contain our view that allows users to select different colours
     private let popover = NSPopover()
 
-    // MARK: - ColourPicker
+    // MARK: - ColorPicker
 
     init() {
         self.colorPickerViewController = ColorPickerViewController()
@@ -147,6 +164,8 @@ public protocol ColorPickerDelegate {
     }
     
     private func setup() {
+        self.wantsLayer = true
+
         self.colorPickerViewController.delegate = self
 
         self.wantsLayer = true

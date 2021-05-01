@@ -1,6 +1,6 @@
 //
 //  ColourPickerViewController.swift
-//  ColourPicker
+//  ColorPicker
 //
 //  Created by William Lumley on 25/2/20.
 //
@@ -23,7 +23,7 @@ internal class ColorPickerViewController: NSViewController {
         }
     }
 
-    /// The colour that has been selected, and is displaying, in our ColourPicker
+    /// The colour that has been selected, and is displaying, in our ColorPicker
     internal var selectedColor: NSColor? {
         didSet {
             self.collectionView.reloadData()

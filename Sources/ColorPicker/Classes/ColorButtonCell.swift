@@ -1,6 +1,6 @@
 //
 //  ColorCell.swift
-//  ColourPicker
+//  ColorPicker
 //
 //  Created by William Lumley on 8/12/20.
 //

@@ -1,5 +1,5 @@
 import XCTest
-import ColourPicker
+import ColorPicker
 
 class Tests: XCTestCase
 {
