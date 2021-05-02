@@ -1,4 +1,4 @@
-![ColorPicker: Elegant Color Picking](https://raw.githubusercontent.com/will-lumley/ColorPicker/main/ColorPicker.png)
+![ColorPicker: Elegant Color Picking](https://raw.githubusercontent.com/will-lumley/ColorPicker/main/ColorPicker.png?token=ADLO7QSDEBTMPDBCRUQREA3AR2EQK)
 
 # ColorPicker
 
