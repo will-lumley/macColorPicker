@@ -7,10 +7,9 @@
 //
 
 import Cocoa
-import ColorPicker
+import macColorPicker
 
-class ViewController: NSViewController
-{
+class ViewController: NSViewController{
     override var representedObject: Any? { didSet {} }
     
     @IBOutlet weak var colorPicker: ColorPicker!

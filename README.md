@@ -30,7 +30,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-ColorPicker macOS 10.10 and above.
+ColorPicker macOS 10.12 and above.
 
 ## Installation
 

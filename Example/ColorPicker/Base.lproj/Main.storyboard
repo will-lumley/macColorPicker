@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -709,7 +710,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Pci-Kx-Cn2" customClass="ColorPicker" customModule="ColorPicker">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Pci-Kx-Cn2" customClass="ColorPicker" customModule="macColorPicker">
                                 <rect key="frame" x="159" y="87" width="163" height="96"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="St8-U8-KdR"/>

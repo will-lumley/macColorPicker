@@ -1,11 +1,11 @@
 use_frameworks!
 
 target 'ColorPicker_Example' do
-  platform :macos
-  pod 'ColorPicker', :path => '../'
+  platform :macos, '10.12'
+  pod 'macColorPicker', :path => '../'
 
   target 'ColorPicker_Tests' do
     inherit! :search_paths
-    pod 'ColorPicker', :path => '../'
+    pod 'macColorPicker', :path => '../'
   end
 end

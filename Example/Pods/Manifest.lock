@@ -1,16 +1,16 @@
 PODS:
-  - ColorPicker (0.1.0)
+  - macColorPicker (1.0.0)
 
 DEPENDENCIES:
-  - ColorPicker (from `../`)
+  - macColorPicker (from `../`)
 
 EXTERNAL SOURCES:
-  ColorPicker:
+  macColorPicker:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ColorPicker: 6557934e9cf7def2c327bc698fbe6329c7c04584
+  macColorPicker: e7b6b936869b6140fecee69e329b16ae48591357
 
-PODFILE CHECKSUM: 31c9502f3495238acbcb86b3436efa60413c89fb
+PODFILE CHECKSUM: ce821b76ab120aa7ea68bfde1348350de83963ca
 
 COCOAPODS: 1.10.0
