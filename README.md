@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/cocoapods/l/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/ColorPicker)
 [![Twitter](https://img.shields.io/badge/twitter-@wlumley95-blue.svg?style=flat)](https://twitter.com/wlumley95)
 
-ColorPicker is a small, pure Swift library designed for macOS applications that allows you to let your users easily choose a color.
+ColorPicker is a tiny, pure Swift library designed for macOS applications that allows you to let your users easily choose a color.
 
 ColorPicker allows you to present the user with a preset range of colors to choose from. As the developer, you get to choose how these are formatted, how they look, and what happens when a user makes a selection.
 If you want to give the user more control, you can allow them to select a button that presents the `NSColorPanel`.
