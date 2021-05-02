@@ -36,6 +36,9 @@ public protocol ColorPickerDelegate {
 
                 self.layer?.add(backgroundColorAnimation, forKey: "backgroundColor")
             } else {
+                self.layer?.removeAnimation(forKey: "backgroundColor")
+
+                self.wantsLayer = true
                 self.layer?.backgroundColor = newValue?.cgColor
             }
 
