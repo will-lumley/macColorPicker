@@ -21,6 +21,9 @@ If you want to give the user more control, you can allow them to select a button
 ColorPicker is simply a subclass of `NSView` so you can simply add ColorPicker like you would any other view, whether it be to your storyboard, XIB, or just in code. 
 Configuring ColorPicker's `delegate` allows you to be notified when the ColorPicker view is about to be presented, when is has been presented, or when a user has selected a color.
 
+
+https://user-images.githubusercontent.com/14086082/116811221-6fd58480-ab8b-11eb-9e3f-a19fb3f83caa.mov
+
 ## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
