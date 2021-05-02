@@ -27,12 +27,12 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-FaviconFinder supports iOS 10.0 and above & macOS 10.10 and above.
+ColorPicker macOS 10.10 and above.
 
 ## Installation
 
 ### Cocoapods
-FaviconFinder is available through [CocoaPods](http://cocoapods.org). To install
+ColorPicker is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -40,7 +40,7 @@ pod 'ColorPicker', '~> 1.0'
 ```
 
 ### Carthage
-FaviconFinder is also available through [Carthage](https://github.com/Carthage/Carthage). To install
+ColorPicker is also available through [Carthage](https://github.com/Carthage/Carthage). To install
 it, simply add the following line to your Cartfile:
 
 ```ruby
@@ -48,7 +48,7 @@ github "will-lumley/ColorPicker" == 1.0
 ```
 
 ### Swift Package Manager
-FaviconFinder is also available through [Swift Package Manager](https://github.com/apple/swift-package-manager). 
+ColorPicker is also available through [Swift Package Manager](https://github.com/apple/swift-package-manager). 
 To install it, simply add the dependency to your Package.Swift file:
 
 ```swift
