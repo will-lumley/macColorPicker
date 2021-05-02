@@ -8,14 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name         = "ColorPicker"
-  s.version      = "0.1.0"
+  s.version      = "1.0.0"
   s.summary      = "A pure Swift library to detect favicons use by a website."
   s.homepage     = "https://github.com/will-lumley/ColorPicker.git"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
   
   s.description      = <<-DESC
-    FaviconFinder is a tiny pure Swift library designed for iOS and macOS applications that allows
-    you to detect favicons used by a website.
+    ColorPicker is a tiny, pure Swift library designed for macOS applications that allows you to let your users easily choose a color.
                           DESC
 
   s.author             = { "William Lumley" => "will@lumley.io" }
