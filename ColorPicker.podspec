@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name         = "ColorPicker"
+  s.name         = "macColorPicker"
   s.version      = "1.0.0"
   s.summary      = "A pure Swift library to detect favicons use by a website."
   s.homepage     = "https://github.com/will-lumley/ColorPicker.git"

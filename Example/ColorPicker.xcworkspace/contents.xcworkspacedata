@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ColorPicker.xcodeproj">
+      location = "group:/Users/will/Documents/Dev/Projects/OpenSource/will-lumley/ColorPicker/Example/ColorPicker.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
