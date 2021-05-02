@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ColorPicker
+import macColorPicker
 
 class ColorPickerTests: XCTestCase {
 
