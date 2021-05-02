@@ -2,7 +2,7 @@
   "name": "ColorPicker",
   "version": "0.1.0",
   "summary": "A pure Swift library to detect favicons use by a website.",
-  "homepage": "https://github.com/will-lumley/ColourPicker.git",
+  "homepage": "https://github.com/will-lumley/ColorPicker.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE.txt"
@@ -17,7 +17,7 @@
   },
   "swift_versions": "5.0",
   "source": {
-    "git": "https://github.com/will-lumley/ColourPicker.git",
+    "git": "https://github.com/will-lumley/ColorPicker.git",
     "tag": "0.1.0"
   },
   "source_files": "Sources/**/*/*",

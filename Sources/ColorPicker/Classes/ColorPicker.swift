@@ -17,6 +17,7 @@ public protocol ColorPickerDelegate {
 
     // MARK: - Computed Variables
 
+    /// The previously selected color. Used for animation transitions
     private var oldSelectedColor: NSColor?
 
     /// The colour that has been selected, and is displaying, in our ColorPicker
@@ -24,12 +25,17 @@ public protocol ColorPickerDelegate {
         //When the SelectedColor is set, update the ColourPicker's background colour
         get { self.colorPickerViewController.selectedColor }
         set {
+            guard let newValue = newValue else {
+                return
+            }
+
             self.colorPickerViewController.selectedColor = newValue
+            self.delegate?.didSelectColor(newValue)
 
             if let animationDuration = self.animationDuration {
                 let backgroundColorAnimation = CABasicAnimation(keyPath: "backgroundColor")
                 backgroundColorAnimation.fromValue = self.oldSelectedColor?.cgColor
-                backgroundColorAnimation.toValue = newValue?.cgColor
+                backgroundColorAnimation.toValue = newValue.cgColor
                 backgroundColorAnimation.duration = CFTimeInterval(animationDuration)
                 backgroundColorAnimation.isRemovedOnCompletion = false
                 backgroundColorAnimation.fillMode = .forwards
@@ -39,7 +45,7 @@ public protocol ColorPickerDelegate {
                 self.layer?.removeAnimation(forKey: "backgroundColor")
 
                 self.wantsLayer = true
-                self.layer?.backgroundColor = newValue?.cgColor
+                self.layer?.backgroundColor = newValue.cgColor
             }
 
             self.oldSelectedColor = newValue
@@ -156,13 +162,19 @@ public protocol ColorPickerDelegate {
     }
 
     open override func mouseUp(with event: NSEvent) {
-        self.popover.contentSize = self.popoverContentSize
-        self.popover.contentViewController = self.colorPickerViewController
-        self.popover.behavior = .transient
-        self.popover.animates = true
+        if self.window != nil {
+            self.popover.contentSize = self.popoverContentSize
+            self.popover.contentViewController = self.colorPickerViewController
+            self.popover.behavior = .transient
+            self.popover.animates = true
+        }
 
         self.delegate?.willOpenColorPicker()
-        self.popover.show(relativeTo: self.bounds, of: self, preferredEdge: self.preferredOpeningEdge)
+
+        if self.window != nil {
+            self.popover.show(relativeTo: self.bounds, of: self, preferredEdge: self.preferredOpeningEdge)
+        }
+
         self.delegate?.didOpenColorPicker()
     }
     
@@ -187,8 +199,6 @@ extension ColorPicker: ColorPickerViewControllerDelegate {
         if self.dismissUponColorSelect {
             self.popover.close()
         }
-
-        self.delegate?.didSelectColor(color)
     }
 
 }
