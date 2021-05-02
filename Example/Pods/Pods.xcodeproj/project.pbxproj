@@ -78,7 +78,7 @@
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C245AEABD4ADCC234E064B564D3C5D8D /* ColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ColorPicker.debug.xcconfig; sourceTree = "<group>"; };
 		C846BC9E54FB909FF1436E8FA8DA0EE1 /* ColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorPicker-umbrella.h"; sourceTree = "<group>"; };
-		CB377FF74CEDD1704F1E27CE606A7102 /* ColorPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ColorPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB377FF74CEDD1704F1E27CE606A7102 /* macColorPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = macColorPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D20AEF373C74EFD9FCC9F366EBF8BAEA /* ColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ColorPicker-prefix.pch"; sourceTree = "<group>"; };
 		D7F94260DE49A84BD2F0C7C81B3A4ACD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E49A8D1D74420EA6EB81597D4BDC5572 /* Pods-ColorPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ColorPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		2BB69FA8E34D4F1C28663A26A07A3B40 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CB377FF74CEDD1704F1E27CE606A7102 /* ColorPicker.podspec */,
+				CB377FF74CEDD1704F1E27CE606A7102 /* macColorPicker.podspec */,
 				BEF13FFE263EFD0B00AA42AC /* LICENSE.txt */,
 				D7F94260DE49A84BD2F0C7C81B3A4ACD /* README.md */,
 			);
