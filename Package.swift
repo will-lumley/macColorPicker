@@ -10,5 +10,11 @@ let package = Package(
         .library(
             name: "ColorPicker",
             targets: ["ColorPicker"]),
+    ],
+    dependencies: [
+
+    ],
+    targets: [
+        
     ]
 )
