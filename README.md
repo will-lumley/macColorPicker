@@ -2,7 +2,7 @@
 
 # ColorPicker
 
-[![CI Status](https://img.shields.io/travis/will-lumley/ColorPicker/main.svg)](https://travis-ci.org/will-lumley/ColorPicker)
+[![CI Status](https://api.travis-ci.com/will-lumley/ColorPicker.svg?branch=main)](https://travis-ci.org/will-lumley/ColorPicker)
 [![Version](https://img.shields.io/cocoapods/v/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/ColorPicker)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
