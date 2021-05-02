@@ -3,12 +3,12 @@
 # ColorPicker
 
 [![CI Status](https://api.travis-ci.com/will-lumley/ColorPicker.svg?branch=main)](https://travis-ci.org/will-lumley/ColorPicker)
-[![Version](https://img.shields.io/cocoapods/v/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/ColorPicker)
+[![Version](https://img.shields.io/cocoapods/v/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![Platform](https://img.shields.io/cocoapods/p/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/ColorPicker)
-[![License](https://img.shields.io/cocoapods/l/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/ColorPicker)
+[![Platform](https://img.shields.io/cocoapods/p/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
+[![License](https://img.shields.io/cocoapods/l/ColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
 [![Twitter](https://img.shields.io/badge/twitter-@wlumley95-blue.svg?style=flat)](https://twitter.com/wlumley95)
 
 ColorPicker is a tiny, pure Swift library designed for macOS applications that allows you to let your users easily choose a color.
@@ -39,7 +39,7 @@ ColorPicker is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ColorPicker', '~> 1.0'
+pod 'macColorPicker', '~> 1.0'
 ```
 
 ### Carthage
