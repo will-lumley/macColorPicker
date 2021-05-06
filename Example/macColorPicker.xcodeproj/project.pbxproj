@@ -42,13 +42,13 @@
 		DB0BE6C014EA9ACE523BD306 /* Pods-ColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Tests/Pods-ColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E29557B22524EC8F72F3BC80 /* Pods-ColourPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Example.release.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Example/Pods-ColourPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC92D14DEC5EF55460800D23 /* Pods-ColourPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColourPicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-ColourPicker_Tests/Pods-ColourPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ED83F67820348A760038D96B /* ColorPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED83F67820348A760038D96B /* macColorPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macColorPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED83F67B20348A760038D96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED83F67D20348A760038D96B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED83F67F20348A760038D96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED83F68220348A760038D96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED83F68420348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED83F68A20348A760038D96B /* ColorPicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED83F68A20348A760038D96B /* macColorPicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macColorPicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED83F68E20348A760038D96B /* ColorPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerTests.swift; sourceTree = "<group>"; };
 		ED83F69020348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				ED83F69A20348B650038D96B /* Metadata */,
-				ED83F67A20348A760038D96B /* ColorPicker */,
+				ED83F67A20348A760038D96B /* macColorPicker */,
 				ED83F68D20348A760038D96B /* Tests */,
 				ED83F67920348A760038D96B /* Products */,
 				9EC70028C7F24040EA246EAD /* Pods */,
@@ -112,13 +112,13 @@
 		ED83F67920348A760038D96B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED83F67820348A760038D96B /* ColorPicker_Example.app */,
-				ED83F68A20348A760038D96B /* ColorPicker_Tests.xctest */,
+				ED83F67820348A760038D96B /* macColorPicker_Example.app */,
+				ED83F68A20348A760038D96B /* macColorPicker_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED83F67A20348A760038D96B /* ColorPicker */ = {
+		ED83F67A20348A760038D96B /* macColorPicker */ = {
 			isa = PBXGroup;
 			children = (
 				ED83F67B20348A760038D96B /* AppDelegate.swift */,
@@ -128,7 +128,7 @@
 				ED83F68420348A760038D96B /* Info.plist */,
 				BEF91CB5257F51B80068C8A5 /* ColorPicker.entitlements */,
 			);
-			path = ColorPicker;
+			path = macColorPicker;
 			sourceTree = "<group>";
 		};
 		ED83F68D20348A760038D96B /* Tests */ = {
@@ -154,9 +154,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED83F67720348A760038D96B /* ColorPicker_Example */ = {
+		ED83F67720348A760038D96B /* macColorPicker_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED83F69320348A760038D96B /* Build configuration list for PBXNativeTarget "ColorPicker_Example" */;
+			buildConfigurationList = ED83F69320348A760038D96B /* Build configuration list for PBXNativeTarget "macColorPicker_Example" */;
 			buildPhases = (
 				63410FAE8328C52F5A692F9F /* [CP] Check Pods Manifest.lock */,
 				ED83F67420348A760038D96B /* Sources */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = ColorPicker_Example;
+			name = macColorPicker_Example;
 			productName = ColourPicker;
-			productReference = ED83F67820348A760038D96B /* ColorPicker_Example.app */;
+			productReference = ED83F67820348A760038D96B /* macColorPicker_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ED83F68920348A760038D96B /* ColorPicker_Tests */ = {
+		ED83F68920348A760038D96B /* macColorPicker_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED83F69620348A760038D96B /* Build configuration list for PBXNativeTarget "ColorPicker_Tests" */;
+			buildConfigurationList = ED83F69620348A760038D96B /* Build configuration list for PBXNativeTarget "macColorPicker_Tests" */;
 			buildPhases = (
 				7746E4330218FC4064ACB8D4 /* [CP] Check Pods Manifest.lock */,
 				ED83F68620348A760038D96B /* Sources */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				ED83F68C20348A760038D96B /* PBXTargetDependency */,
 			);
-			name = ColorPicker_Tests;
+			name = macColorPicker_Tests;
 			productName = ColourPickerTests;
-			productReference = ED83F68A20348A760038D96B /* ColorPicker_Tests.xctest */;
+			productReference = ED83F68A20348A760038D96B /* macColorPicker_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED83F67320348A760038D96B /* Build configuration list for PBXProject "ColorPicker" */;
+			buildConfigurationList = ED83F67320348A760038D96B /* Build configuration list for PBXProject "macColorPicker" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,8 +229,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED83F67720348A760038D96B /* ColorPicker_Example */,
-				ED83F68920348A760038D96B /* ColorPicker_Tests */,
+				ED83F67720348A760038D96B /* macColorPicker_Example */,
+				ED83F68920348A760038D96B /* macColorPicker_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,7 +360,7 @@
 /* Begin PBXTargetDependency section */
 		ED83F68C20348A760038D96B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED83F67720348A760038D96B /* ColorPicker_Example */;
+			target = ED83F67720348A760038D96B /* macColorPicker_Example */;
 			targetProxy = ED83F68B20348A760038D96B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -564,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED83F67320348A760038D96B /* Build configuration list for PBXProject "ColorPicker" */ = {
+		ED83F67320348A760038D96B /* Build configuration list for PBXProject "macColorPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED83F69120348A760038D96B /* Debug */,
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED83F69320348A760038D96B /* Build configuration list for PBXNativeTarget "ColorPicker_Example" */ = {
+		ED83F69320348A760038D96B /* Build configuration list for PBXNativeTarget "macColorPicker_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED83F69420348A760038D96B /* Debug */,
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED83F69620348A760038D96B /* Build configuration list for PBXNativeTarget "ColorPicker_Tests" */ = {
+		ED83F69620348A760038D96B /* Build configuration list for PBXNativeTarget "macColorPicker_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED83F69720348A760038D96B /* Debug */,

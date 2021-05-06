@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED83F67720348A760038D96B"
-               BuildableName = "ColorPicker_Example.app"
-               BlueprintName = "ColorPicker_Example"
-               ReferencedContainer = "container:ColorPicker.xcodeproj">
+               BuildableName = "macColorPicker_Example.app"
+               BlueprintName = "macColorPicker_Example"
+               ReferencedContainer = "container:macColorPicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED83F67720348A760038D96B"
-            BuildableName = "ColorPicker_Example.app"
-            BlueprintName = "ColorPicker_Example"
-            ReferencedContainer = "container:ColorPicker.xcodeproj">
+            BuildableName = "macColorPicker_Example.app"
+            BlueprintName = "macColorPicker_Example"
+            ReferencedContainer = "container:macColorPicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -42,9 +42,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED83F68920348A760038D96B"
-               BuildableName = "ColorPicker_Tests.xctest"
-               BlueprintName = "ColorPicker_Tests"
-               ReferencedContainer = "container:ColorPicker.xcodeproj">
+               BuildableName = "macColorPicker_Tests.xctest"
+               BlueprintName = "macColorPicker_Tests"
+               ReferencedContainer = "container:macColorPicker.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED83F67720348A760038D96B"
-            BuildableName = "ColorPicker_Example.app"
-            BlueprintName = "ColorPicker_Example"
-            ReferencedContainer = "container:ColorPicker.xcodeproj">
+            BuildableName = "macColorPicker_Example.app"
+            BlueprintName = "macColorPicker_Example"
+            ReferencedContainer = "container:macColorPicker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -81,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED83F67720348A760038D96B"
-            BuildableName = "ColorPicker_Example.app"
-            BlueprintName = "ColorPicker_Example"
-            ReferencedContainer = "container:ColorPicker.xcodeproj">
+            BuildableName = "macColorPicker_Example.app"
+            BlueprintName = "macColorPicker_Example"
+            ReferencedContainer = "container:macColorPicker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
