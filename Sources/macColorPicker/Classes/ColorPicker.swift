@@ -6,7 +6,7 @@
 //  Copyright © 2020 William Lumley. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 /// This protocol is used to allow communication from the ColorPicker to the developers project
 public protocol ColorPickerDelegate {

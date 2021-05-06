@@ -5,7 +5,7 @@
 //  Created by William Lumley on 8/12/20.
 //
 
-import Cocoa
+import AppKit
 
 class ColorButtonCell: NSCollectionViewItem {
 
