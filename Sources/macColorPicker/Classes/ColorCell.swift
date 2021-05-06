@@ -5,7 +5,7 @@
 //  Created by William Lumley on 8/12/20.
 //
 
-import Foundation
+import Cocoa
 
 class ColorCell: NSCollectionViewItem {
 
