@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ColorPicker_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ColorPicker_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_macColorPicker_ExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_macColorPicker_ExampleVersionString[];
 
