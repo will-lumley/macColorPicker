@@ -5,7 +5,7 @@
 //  Created by William Lumley on 25/2/20.
 //
 
-import Cocoa
+import AppKit
 
 /// This protocol is used internally to allow communication from the ColorPickerViewController to the ColorPicker
 internal protocol ColorPickerViewControllerDelegate {

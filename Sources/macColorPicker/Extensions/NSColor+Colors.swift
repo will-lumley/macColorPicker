@@ -5,7 +5,7 @@
 //  Created by William Lumley on 13/12/20.
 //
 
-import Foundation
+import AppKit
 
 public extension NSColor {
 

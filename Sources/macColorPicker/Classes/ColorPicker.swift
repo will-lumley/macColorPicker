@@ -6,6 +6,8 @@
 //  Copyright © 2020 William Lumley. All rights reserved.
 //
 
+import AppKit
+
 /// This protocol is used to allow communication from the ColorPicker to the developers project
 public protocol ColorPickerDelegate {
     func willOpenColorPicker()
