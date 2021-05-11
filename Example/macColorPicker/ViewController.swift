@@ -27,12 +27,12 @@ extension ViewController: ColorPickerDelegate {
     func willOpenColorPicker() {
         print("willOpenColorPicker")
     }
-    
+
     func didOpenColorPicker() {
         print("didOpenColorPicker")
     }
     
-    func didSelectColor(_ color: NSColor) {
+    func didSelectColor(_ sender: ColorPicker, color: NSColor) {
         print("Color Selected: \(color)")
     }
 

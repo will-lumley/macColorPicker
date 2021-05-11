@@ -58,6 +58,7 @@ class ColorPickerTests: XCTestCase {
         self.didSelectColorExpectation = self.expectation(description: BackgroundExpectation.didSelectColor.rawValue)
 
         self.colorPicker.selectedColor = color
+        self.colorPicker.delegate?.didSelectColor?(self.colorPicker, color: color)
 
         // Check that the property is being stored correctly
         XCTAssert(self.colorPicker.selectedColor == color)
@@ -82,16 +83,16 @@ class ColorPickerTests: XCTestCase {
 // MARK: - ColorPickerDelegate
 
 extension ColorPickerTests: ColorPickerDelegate {
-
-    func willOpenColorPicker() {
+    
+    func willOpenColorPicker(_ sender: ColorPicker) {
         self.willOpenColorPickerExpectation?.fulfill()
     }
 
-    func didOpenColorPicker() {
+    func didOpenColorPicker(_ sender: ColorPicker) {
         self.didOpenColorPickerExpectation?.fulfill()
     }
 
-    func didSelectColor(_ color: NSColor) {
+    func didSelectColor(_ sender: ColorPicker, color: NSColor) {
         self.didSelectColorExpectation?.fulfill()
     }
 }
