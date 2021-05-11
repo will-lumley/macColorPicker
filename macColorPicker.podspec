@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name         = "macColorPicker"
-  s.version      = "1.2.0"
+  s.version      = "1.2.1"
   s.summary      = "A pure Swift library to detect favicons use by a website."
-  s.homepage     = "https://github.com/will-lumley/ColorPicker.git"
+  s.homepage     = "https://github.com/will-lumley/macColorPicker.git"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
   
   s.description      = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   
   s.swift_version         = '5.0'
   
-  s.source       = { :git => "https://github.com/will-lumley/ColorPicker.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/will-lumley/macColorPicker.git", :tag => s.version.to_s }
   
   s.source_files = 'Sources/**/*/*'
 end
