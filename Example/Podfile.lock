@@ -1,5 +1,5 @@
 PODS:
-  - macColorPicker (1.0.0)
+  - macColorPicker (1.2.2)
 
 DEPENDENCIES:
   - macColorPicker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  macColorPicker: e7b6b936869b6140fecee69e329b16ae48591357
+  macColorPicker: f663a72285ff039df6bc0fb1da4fdb969a3cd667
 
 PODFILE CHECKSUM: 20d51270fea75c83cbdd57cda1425ebd428d22de
 

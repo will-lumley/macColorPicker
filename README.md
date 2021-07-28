@@ -1,6 +1,6 @@
 ![ColorPicker: Elegant Color Picking](https://raw.githubusercontent.com/will-lumley/macColorPicker/main/ColorPicker.png)
 
-# ColorPicker
+# macColorPicker
 
 [![CI Status](https://api.travis-ci.com/will-lumley/macColorPicker.svg?branch=main)](https://travis-ci.org/will-lumley/macColorPicker)
 [![Version](https://img.shields.io/cocoapods/v/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
@@ -39,7 +39,7 @@ macColorPicker is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'macColorPicker', '~> 1.2.2'
+pod 'macColorPicker', '~> 1.2.3'
 ```
 
 ### Carthage
@@ -47,7 +47,7 @@ macColorPicker is also available through [Carthage](https://github.com/Carthage/
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "will-lumley/ColorPicker" == 1.2.2
+github "will-lumley/macColorPicker" == 1.2.3
 ```
 
 ### Swift Package Manager
@@ -57,7 +57,7 @@ To install it, simply add the dependency to your Package.Swift file:
 ```swift
 ...
 dependencies: [
-    .package(url: "https://github.com/will-lumley/macColorPicker.git", from: "1.2.2"),
+    .package(url: "https://github.com/will-lumley/macColorPicker.git", from: "1.2.3"),
 ],
 targets: [
     .target( name: "YourTarget", dependencies: ["macColorPicker"]),
