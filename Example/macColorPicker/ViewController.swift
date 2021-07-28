@@ -6,7 +6,7 @@
 //  Copyright (c) 2020 will-lumley. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 import macColorPicker
 
 class ViewController: NSViewController{
