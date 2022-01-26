@@ -2,7 +2,7 @@
 
 # macColorPicker
 
-[![CI Status](https://api.travis-ci.com/will-lumley/macColorPicker.svg?branch=main)](https://travis-ci.org/will-lumley/macColorPicker)
+[![CI Status](https://github.com/will-lumley/macColorPicker/actions/workflows/BuildTests.yml/badge.svg?branch=main)]
 [![Version](https://img.shields.io/cocoapods/v/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
@@ -39,7 +39,7 @@ macColorPicker is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'macColorPicker', '~> 1.2.3'
+pod 'macColorPicker', '~> 1.2.4'
 ```
 
 ### Carthage
@@ -47,7 +47,7 @@ macColorPicker is also available through [Carthage](https://github.com/Carthage/
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "will-lumley/macColorPicker" == 1.2.3
+github "will-lumley/macColorPicker" == 1.2.4
 ```
 
 ### Swift Package Manager
@@ -57,7 +57,7 @@ To install it, simply add the dependency to your Package.Swift file:
 ```swift
 ...
 dependencies: [
-    .package(url: "https://github.com/will-lumley/macColorPicker.git", from: "1.2.3"),
+    .package(url: "https://github.com/will-lumley/macColorPicker.git", from: "1.2.4"),
 ],
 targets: [
     .target( name: "YourTarget", dependencies: ["macColorPicker"]),

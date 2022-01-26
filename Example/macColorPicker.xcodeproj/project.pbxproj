@@ -39,6 +39,8 @@
 		AAD6A5C9CA2B6FE010DB5E96 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B23EAD3552341EF441B03A6F /* Pods-macColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macColorPicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-macColorPicker_Tests/Pods-macColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BA2A9EBE1098817E1DCFE514 /* Pods-ColorPicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ColorPicker_Tests/Pods-ColorPicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7EB9C727A1F96300CC25B2 /* BuildTests.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = BuildTests.yml; path = ../.github/workflows/BuildTests.yml; sourceTree = "<group>"; };
+		BE7EB9C827A1F96300CC25B2 /* DeployToCocoapods.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = DeployToCocoapods.yml; path = ../.github/workflows/DeployToCocoapods.yml; sourceTree = "<group>"; };
 		BEE0BB13263F06410097D82F /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE.txt; path = ../LICENSE.txt; sourceTree = "<group>"; };
 		BEE0BB14263F06410097D82F /* macColorPicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = macColorPicker.podspec; path = ../macColorPicker.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BEE0BB16263F074B0097D82F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
@@ -105,6 +107,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE7EB9C927A1F96800CC25B2 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				BE7EB9C727A1F96300CC25B2 /* BuildTests.yml */,
+				BE7EB9C827A1F96300CC25B2 /* DeployToCocoapods.yml */,
+			);
+			name = Workflows;
+			sourceTree = "<group>";
+		};
 		ED83F66F20348A760038D96B = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +162,7 @@
 		ED83F69A20348B650038D96B /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				BE7EB9C927A1F96800CC25B2 /* Workflows */,
 				BEE0BB14263F06410097D82F /* macColorPicker.podspec */,
 				BEE0BB16263F074B0097D82F /* Package.swift */,
 				BEE0BB13263F06410097D82F /* LICENSE.txt */,
