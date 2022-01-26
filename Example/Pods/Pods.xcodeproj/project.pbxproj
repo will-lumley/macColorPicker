@@ -54,7 +54,7 @@
 		17047BFB89D51A50048497BC9DD20D9B /* Pods-macColorPicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-macColorPicker_Tests.modulemap"; sourceTree = "<group>"; };
 		17DE52AC6BB2A89BBECF3C183DDA49C4 /* Pods-macColorPicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macColorPicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B4A2B18FE97278E1B2C2455B167C1F9 /* ColorPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
-		1FD5CFB4DEA79C5DE4D08C770B193D79 /* macColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = macColorPicker.framework; path = macColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD5CFB4DEA79C5DE4D08C770B193D79 /* macColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = macColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5BC99223CEA82AFAE9818D94CCFC0D /* macColorPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "macColorPicker-umbrella.h"; sourceTree = "<group>"; };
 		33523BAC71A8669B7BBAE64EB41C5AC2 /* Pods-macColorPicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-macColorPicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		45C3591FD42117DAA8E163380883B4D4 /* NSColor+Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSColor+Colors.swift"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		4BBE1DD7904BD9779B72A007376E53C9 /* ColorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		517FB81E05654DB98DB14FA01C759683 /* macColorPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "macColorPicker-prefix.pch"; sourceTree = "<group>"; };
 		56D939BC456675CB51F92556C8711BF9 /* Pods-macColorPicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macColorPicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		583A0961D3760E9EFEAC5315A86E0C76 /* Pods_macColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_macColorPicker_Example.framework; path = "Pods-macColorPicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		583A0961D3760E9EFEAC5315A86E0C76 /* Pods_macColorPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macColorPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AACB4B45323D3C8D757A8201B3903EF /* macColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = macColorPicker.debug.xcconfig; sourceTree = "<group>"; };
 		5B941571164B7B4DEA7A0E9CACB4519C /* macColorPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = macColorPicker.modulemap; sourceTree = "<group>"; };
 		65563E75550DADC46F3CC45A455D7DF4 /* Pods-macColorPicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macColorPicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -70,22 +70,22 @@
 		75C2C77E533675DEB26C91371998447E /* ColorPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		94EF22CA22CDFF42FBB8415809F0A701 /* ColorButtonCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorButtonCell.swift; sourceTree = "<group>"; };
 		9B55E450DAB35CAE6EE4539CA69F8146 /* Pods-macColorPicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-macColorPicker_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BB6D93BAEC49E8198773F0CC111415 /* Pods-macColorPicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-macColorPicker_Example.modulemap"; sourceTree = "<group>"; };
 		AA67D63318343B05CE3B14CC88ABDF94 /* Pods-macColorPicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-macColorPicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ABD3BFB66AA31E9968273A76E82C1AA2 /* Pods-macColorPicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-macColorPicker_Tests-dummy.m"; sourceTree = "<group>"; };
-		B17923EBDCD845B0B69DF33A4FA02656 /* Pods_macColorPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_macColorPicker_Tests.framework; path = "Pods-macColorPicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17923EBDCD845B0B69DF33A4FA02656 /* Pods_macColorPicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macColorPicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5326CD48E3E098B2D3B34BE6B3FDA8D /* Pods-macColorPicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macColorPicker_Example-Info.plist"; sourceTree = "<group>"; };
 		BDDE603D741B6CFC1E36083F11200920 /* macColorPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "macColorPicker-dummy.m"; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C3F6709E2109F87B3332317086B15501 /* Pods-macColorPicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macColorPicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CD291E47EC0254A41EB5932925F797A8 /* macColorPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "macColorPicker-Info.plist"; sourceTree = "<group>"; };
 		CE90A5860BECDD017E83E3A2A99CEA9A /* Pods-macColorPicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-macColorPicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		E53146E468B79281D5319485F94AEA9A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		E53146E468B79281D5319485F94AEA9A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		E7690010B1AC646FDEFCCE4CD60F403C /* Pods-macColorPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-macColorPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F02D9557E7365E220275CAD6E63E0E2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F02D9557E7365E220275CAD6E63E0E2B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3ACA7C28255B21313C86345E390B5B0 /* Pods-macColorPicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macColorPicker_Tests-Info.plist"; sourceTree = "<group>"; };
-		F9AD38C38FDA603488DBDAE57197F4E4 /* macColorPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = macColorPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F9AD38C38FDA603488DBDAE57197F4E4 /* macColorPicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = macColorPicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,6 +476,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.2.3;
 				MODULEMAP_FILE = "Target Support Files/macColorPicker/macColorPicker.modulemap";
 				PRODUCT_MODULE_NAME = macColorPicker;
 				PRODUCT_NAME = macColorPicker;
@@ -508,6 +509,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.2.3;
 				MODULEMAP_FILE = "Target Support Files/macColorPicker/macColorPicker.modulemap";
 				PRODUCT_MODULE_NAME = macColorPicker;
 				PRODUCT_NAME = macColorPicker;
@@ -743,8 +745,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
