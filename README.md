@@ -14,11 +14,11 @@
 macColorPicker is a tiny, pure Swift library designed for macOS applications that allows you to let your users easily choose a color.
 
 macColorPicker allows you to present the user with a preset range of colors to choose from. As the developer, you get to choose how these are formatted, how they look, and what happens when a user makes a selection.
-If you want to give the user more control, you can allow them to select a button that presents the `NSColorPanel`.
+If you want to give the user more control, you can also allow them to select a button that presents the `NSColorPanel`.
 
 ## Usage
 
-macColorPicker is simply a subclass of `NSView` so you can simply add ColorPicker like you would any other view, whether it be to your storyboard, XIB, or just in code. 
+macColorPicker is a subclass of `NSView` so you can simply add ColorPicker like you would any other view, whether it be to your storyboard, XIB, or just in code. 
 Configuring ColorPicker's `delegate` allows you to be notified when the ColorPicker view is about to be presented, when is has been presented, or when a user has selected a color.
 
 
