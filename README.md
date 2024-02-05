@@ -4,7 +4,6 @@
 
 ![CI Status](https://github.com/will-lumley/macColorPicker/actions/workflows/BuildTests.yml/badge.svg?branch=main)
 [![Version](https://img.shields.io/cocoapods/v/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM Compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 ![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
 [![Platform](https://img.shields.io/cocoapods/p/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
@@ -34,30 +33,19 @@ macColorPicker supports macOS 10.12 and above.
 
 ## Installation
 
-### Cocoapods
-macColorPicker is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'macColorPicker', '~> 1.2.4'
-```
-
-### Carthage
-macColorPicker is also available through [Carthage](https://github.com/Carthage/Carthage). To install
-it, simply add the following line to your Cartfile:
-
-```ruby
-github "will-lumley/macColorPicker" == 1.2.4
-```
-
 ### Swift Package Manager
 macColorPicker is also available through [Swift Package Manager](https://github.com/apple/swift-package-manager). 
 To install it, simply add the dependency to your Package.Swift file:
 
+### Cocoapods and Carthage
+macColorPicker was previously available through CocoaPods and Carthage, however making the library available to all three Cocoapods, 
+Carthage, and SPM (and functional to all three) was becoming troublesome. This, combined with the fact that SPM has seen a serious
+up-tick in adoption & functionality, has led me to remove support for CocoaPods and Carthage.
+
 ```swift
 ...
 dependencies: [
-    .package(url: "https://github.com/will-lumley/macColorPicker.git", from: "1.2.4"),
+    .package(url: "https://github.com/will-lumley/macColorPicker.git", from: "1.3.0"),
 ],
 targets: [
     .target( name: "YourTarget", dependencies: ["macColorPicker"]),
