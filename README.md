@@ -2,13 +2,16 @@
 
 # macColorPicker
 
-![CI Status](https://github.com/will-lumley/macColorPicker/actions/workflows/BuildTests.yml/badge.svg?branch=main)
-[![Version](https://img.shields.io/cocoapods/v/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
-[![SPM Compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
-![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![Platform](https://img.shields.io/cocoapods/p/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
-[![License](https://img.shields.io/cocoapods/l/macColorPicker.svg?style=flat)](https://cocoapods.org/pods/macColorPicker)
-[![Twitter](https://img.shields.io/badge/twitter-@wlumley95-blue.svg?style=flat)](https://twitter.com/wlumley95)
+<p align="center">
+  <img src="https://github.com/will-lumley/macColorPicker/actions/workflows/BuildTests.yml/badge.svg?branch=main" alt="macOS - CI Status">
+</p>
+<p align="center">
+  <a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat" alt="SPM Compatible"></a>
+  <img src="https://img.shields.io/badge/Swift-5.9-orange.svg" alt="Swift 5.5">
+  <a href="https://twitter.com/wlumley95">
+    <img src="https://img.shields.io/badge/twitter-@wlumley95-blue.svg?style=flat" alt="Twitter">
+  </a>
+</p>
 
 macColorPicker is a tiny, pure Swift library designed for macOS applications that allows you to let your users easily choose a color.
 
