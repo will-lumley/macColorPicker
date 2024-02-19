@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/14086082/116811221-6fd58480-ab8b-11eb-
 
 ## Example Project
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and open the example Xcode Project in RichEditorExample.
 
 ## Requirements
 
